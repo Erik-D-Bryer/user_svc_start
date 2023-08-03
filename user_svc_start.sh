@@ -22,7 +22,7 @@
 #      however, once the user systemd unit file is in place, a subsequent 
 #      run of this script will start the service. To clarify, this script 
 #      expects the user systemd unit file to be named username_lm.service
-#      and for this service to start the container running the licensing
+#      and for this service to start the container running the 
 #      daemon. This script is idempotent.
 
 ###########
@@ -43,12 +43,9 @@
 # Usernames/uids may be separated by any combination of tabs, spaces & newlines.
 #username    uid
 USERS=(
-gurobi       2000000000
-schrodinger  2000100000
-tecplot      2000200000
-xfdtd        2000300000
-ampl         2000400000
-totalview    2000500000
+daemon1   2000000000
+daemon2   2000100000
+daemon3   2000200000
 )
 
 HOMEROOT="/home"
